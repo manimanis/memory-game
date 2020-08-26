@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+body {
+  font-family: Alata;
+}
+
+h1 {
+  text-align: center;
+  margin: 0.25em 0;
+}
+
+#grid {
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+  padding: 32px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#control {
+  background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+  padding: 8px;
+  border-radius: 8px;
+  margin: 0.5em auto;
+  max-width: 320px;
+}
+
+#control span {
+  margin: 0 5px;
+  width: calc(33% - 13px);
+  display: inline-block;
+  text-align: center;
+}
+
+#stars, #total-stars {
+  color: gold;
+}
+
+#gamesolved {
+  display: none;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+#gamesolved h1 {
+  color: green;
+}
+
+#gamesolved p {
+  font-size: 16pt;
+}
+
+#gamesolved strong {
+  display: inline-block;
+  width: 80px;
+}
+
+#gamesolved span {
+  display: inline-block;
+  width: 77px;
+}
+
+#gamesolved button {
+  font-size: 16pt;
+  background-color: #800;
+  color: #fff;
+  padding: 8px 32px;
+  border: 0;
+  width: 100%;
+}
+
+.tile {
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  width: calc(25% - 10px);
+  height: 100px;
+  margin: 5px;
+}
+
+.tile.hidden {
+  background-color: #2e3d49;
+  color: #ffffff;
+}
+
+.tile.visible {
+  background-color: #fff;
+}
+
+.tile .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  #gameboard {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.img.brick {
+  background-image: url(svg/001-brick.svg);
+}
+
+.img.symbol {
+  background-image: url(svg/009-symbol.svg);
+}
+
+.img.pick {
+  background-image: url(svg/017-pick.svg);
+}
+
+.img.checkmate {
+  background-image: url(svg/025-checkmate.svg);
+}
+
+.img.spades {
+  background-image: url(svg/033-spades.svg);
+}
+
+.img.zombie {
+  background-image: url(svg/041-zombie.svg);
+}
+
+.img.ghost {
+  background-image: url(svg/002-ghost.svg);
+}
+
+.img.mushroom {
+  background-image: url(svg/010-mushroom.svg);
+}
+
+.img.mushroom {
+  background-image: url(svg/018-mushroom.svg);
+}
+
+.img.chess_board {
+  background-image: url(svg/026-chess_board.svg);
+}
+
+.img.hearts {
+  background-image: url(svg/034-hearts.svg);
+}
+
+.img.ingot {
+  background-image: url(svg/042-ingot.svg);
+}
+
+.img.donkey {
+  background-image: url(svg/003-donkey.svg);
+}
+
+.img.castle {
+  background-image: url(svg/011-castle.svg);
+}
+
+.img.king {
+  background-image: url(svg/019-king.svg);
+}
+
+.img.clock {
+  background-image: url(svg/027-clock.svg);
+}
+
+.img.diamond {
+  background-image: url(svg/035-diamond.svg);
+}
+
+.img.bow {
+  background-image: url(svg/043-bow.svg);
+}
+
+.img.metroid {
+  background-image: url(svg/004-metroid.svg);
+}
+
+.img.bricks {
+  background-image: url(svg/012-bricks.svg);
+}
+
+.img.rook {
+  background-image: url(svg/020-rook.svg);
+}
+
+.img.shovel {
+  background-image: url(svg/028-shovel.svg);
+}
+
+.img.clubs {
+  background-image: url(svg/036-clubs.svg);
+}
+
+.img.arrow {
+  background-image: url(svg/044-arrow.svg);
+}
+
+.img.alien {
+  background-image: url(svg/005-alien.svg);
+}
+
+.img.mushroom {
+  background-image: url(svg/013-mushroom.svg);
+}
+
+.img.bishop {
+  background-image: url(svg/021-bishop.svg);
+}
+
+.img.poker_chip {
+  background-image: url(svg/029-poker_chip.svg);
+}
+
+.img.dices {
+  background-image: url(svg/037-dices.svg);
+}
+
+.img.bone {
+  background-image: url(svg/045-bone.svg);
+}
+
+.img.helmet {
+  background-image: url(svg/006-helmet.svg);
+}
+
+.img.flower {
+  background-image: url(svg/014-flower.svg);
+}
+
+.img.queen {
+  background-image: url(svg/022-queen.svg);
+}
+
+.img.pinball {
+  background-image: url(svg/030-pinball.svg);
+}
+
+.img.puzzle {
+  background-image: url(svg/038-puzzle.svg);
+}
+
+.img.symbols {
+  background-image: url(svg/007-symbols.svg);
+}
+
+.img.coin {
+  background-image: url(svg/015-coin.svg);
+}
+
+.img.pawn {
+  background-image: url(svg/023-pawn.svg);
+}
+
+.img.ping_pong {
+  background-image: url(svg/031-ping_pong.svg);
+}
+
+.img.axe {
+  background-image: url(svg/039-axe.svg);
+}
+
+.img.sword {
+  background-image: url(svg/008-sword.svg);
+}
+
+.img.pipe {
+  background-image: url(svg/016-pipe.svg);
+}
+
+.img.knight {
+  background-image: url(svg/024-knight.svg);
+}
+
+.img.poker {
+  background-image: url(svg/032-poker.svg);
+}
+
+.img.dominoes {
+  background-image: url(svg/040-dominoes.svg);
+}
