@@ -81,10 +81,16 @@ h1 {
 .tile.hidden {
   background-color: #2e3d49;
   color: #ffffff;
+  transform: rotateY(0deg);
+	transition: 0.3s ease-in-out;
+	transform-style: preserve-3d;
 }
 
 .tile.visible {
-  background-color: #fff;
+	background-color: #fff;
+	transform: rotateY(180deg);
+	transition: 0.3s ease-in-out;
+	transform-style: preserve-3d;
 }
 
 .tile .img {
